@@ -1,0 +1,11 @@
+[Unit]
+Description=Custom Fan Control Service
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/fancontrol.sh
+User=root
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
